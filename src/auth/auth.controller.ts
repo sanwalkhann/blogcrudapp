@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
 import { signUpDto } from 'src/dto/signup.dto';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { logInDto } from 'src/dto/login.dto';
-import { User } from 'src/schemas/user.schema';
+import { User } from '../schemas/user.schema';
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
