@@ -2,7 +2,7 @@ import { BadRequestException, Injectable, NotFoundException } from '@nestjs/comm
 import { CreateBlogDto } from './dto/create-blog.dto';
 import { UpdateBlogDto } from './dto/update-blog.dto';
 import { InjectModel } from '@nestjs/mongoose';
-import { Blogs, BlogsDocument } from 'src/schemas/blog.schema';
+import { Blogs, BlogsDocument } from '../schemas/blog.schema';
 import * as path from 'path';
 import * as fs from 'fs';
 import mongoose, { Model } from 'mongoose';
