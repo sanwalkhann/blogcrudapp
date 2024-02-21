@@ -9,8 +9,8 @@ import { Model } from 'mongoose';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt/dist';
 import { User } from '../schemas/user.schema';
-import { signUpDto } from 'src/dto/signup.dto';
-import { logInDto } from 'src/dto/login.dto';
+import { signUpDto } from '../dto/signup.dto';
+import { logInDto } from '../dto/login.dto';
 
 @Injectable()
 export class AuthService {
