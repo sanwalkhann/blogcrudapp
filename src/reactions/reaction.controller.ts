@@ -2,7 +2,7 @@
 
 import { Body, Controller, Post, Req, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { Reaction , ReactionType } from 'src/schemas/reactions.schema';
+import { Reaction , ReactionType } from '../../src/schemas/reactions.schema';
 import { ReactionService } from './reaction.service';
 import { CreateReactionDto } from './dto/create-reaction.dto';
 @Controller('reactions')

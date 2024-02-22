@@ -4,8 +4,8 @@ import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
 import { Category } from 'src/schemas/category.schema';
 import { AuthGuard } from '@nestjs/passport';
-import { RolesGuard } from 'src/auth/roles.guard';
-import { Roles } from 'src/auth/roles.decorator';
+import { RolesGuard } from '../../src/auth/roles.guard';
+import { Roles } from '../../src/auth/roles.decorator';
 @Controller('category')
 export class CategoryController {
   constructor(private readonly categoryService: CategoryService) {}

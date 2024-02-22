@@ -6,7 +6,7 @@ import {
   IsString,
 } from 'class-validator';
 import { Category } from '../../schemas/book.schema';
-import { User } from 'src/schemas/user.schema';
+import { User } from '../../../src/schemas/user.schema';
 
 
 export class UpdateBookDto {
